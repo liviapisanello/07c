@@ -30,7 +30,7 @@ jobs:
         pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        coverage run -m app_test
+        coverage run app_test.py
 
     - name: Resultados
       run: coverage report 
